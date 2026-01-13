@@ -1,0 +1,1 @@
+Beispiel: Einfache Schleife (englisch: loop) über eine Liste.

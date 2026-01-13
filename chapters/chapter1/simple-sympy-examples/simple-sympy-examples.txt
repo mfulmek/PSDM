@@ -1,0 +1,1 @@
+Symbolisches Rechnen mit \pythoncode{sympy}.
