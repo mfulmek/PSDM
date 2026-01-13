@@ -1,0 +1,249 @@
+/* styles/styles.css */
+/* -----------------------------------------------------------------------------
+Seriöses, schlankes CSS für statische Seiten ohne externe Fonts/Tracker.
+- Hohe Lesbarkeit
+- Responsiv
+- Bewusst minimalistisch
+----------------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 1.5;
+  color: #1f2428;
+}
+
+body {
+  margin: 0;
+  background: #f7f8fb;
+}
+
+/* zentrales Layout-Grid */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header mit subtiler Trennung */
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e5e9f2;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1f2428;
+}
+
+.brand-text {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.main-nav .nav-link {
+  color: #3a3f45;
+  text-decoration: none;
+  margin-left: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.main-nav .nav-link:hover {
+  background: #eef2f7;
+}
+
+.nav-link.is-active {
+  background: #e6ecf3;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  color: #1a1f23;
+  margin: 16px 0 8px;
+}
+
+p {
+  margin: 8px 0 16px;
+  color: #2b2f33;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #2c7be5;
+  color: white;
+  border-color: #2c7be5;
+}
+
+.btn-primary:hover {
+  background: #1b6ed8;
+  border-color: #1b6ed8;
+}
+
+.btn-secondary {
+  background: #eef2f7;
+  color: #1f2428;
+  border-color: #d6dbe3;
+}
+
+.btn-secondary:hover {
+  background: #e5eaf1;
+}
+
+/* Collapsible Kapitel */
+.chapter {
+  border: 1px solid #e0e6ef;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.chapter > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px;
+  background: #f3f6fb;
+  position: relative;
+}
+
+/* Caret-Indikator (dreht sich bei open) */
+.chapter > summary::after {
+  content: "▸";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #637082;
+}
+
+.chapter[open] > summary::after {
+  content: "▾";
+}
+
+.chapter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chapter-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.snippet-list {
+  list-style: none;
+  margin: 0;
+  padding: 8px 16px 16px;
+}
+
+.snippet-item {
+  border-top: 1px solid #eef2f7;
+  padding: 12px 0;
+}
+
+.snippet-item:first-child {
+  border-top: none;
+}
+
+.snippet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.snippet-actions-inline {
+  display: flex;
+  gap: 8px;
+}
+
+.snippet-link {
+  font-weight: 600;
+  color: #2c7be5;
+  text-decoration: none;
+}
+
+.snippet-link:hover {
+  text-decoration: underline;
+}
+
+.snippet-description {
+  color: #4b535c;
+  margin: 6px 0 0;
+}
+
+/* Detailseite */
+.snippet-header-block {
+  margin: 24px 0;
+}
+
+.snippet-title {
+  margin-bottom: 4px;
+}
+
+.snippet-subtitle {
+  color: #4b535c;
+}
+
+.pdf-viewer {
+  width: 100%;
+  min-height: 540px;
+  border: 1px solid #e0e6ef;
+  border-radius: 10px;
+  background: #fafbff;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  border-top: 1px solid #e5e9f2;
+  color: #61666b;
+  background: white;
+}
+
+/* Responsives Verhalten */
+@media (max-width: 640px) {
+  .chapter-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .site-header .container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

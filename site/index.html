@@ -1,0 +1,1551 @@
+<!-- templates/index.html.j2 -->
+<!-- templates/base.html.j2 -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Titel und Beschreibung kommen aus den render-Aufrufen -->
+  <title>Python Snippets zur Diskreten Mathematik – Übersicht</title>
+  <meta name="description" content="Kapitelübersicht mit Snippets und PDF-Ansichten, plus Download-Buttons und Feedback-Optionen." />
+  <!-- Zentrales CSS, relroot wird pro Seite berechnet, damit Links auch aus Unterordnern funktionieren -->
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- WICHTIG: keine externen Tracker/Fonts eingebunden, um DSGVO minimal zu halten -->
+</head>
+<body>
+  <!-- Kopfbereich: Branding + einfache Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="./index.html">
+        <!-- Optional: Logo -->
+        
+        <span class="brand-text">Python Snippets zur Diskreten Mathematik</span>
+      </a>
+      <nav class="main-nav">
+        <a href="./index.html" class="nav-link is-active">Übersicht</a>
+        <a href="./legal/impressum.html" class="nav-link ">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hauptinhalt: wird in kindlichen Templates befüllt -->
+  <main class="container">
+    
+<section class="intro">
+  <h1>Übersicht nach Kapiteln</h1>
+  <p>Öffne ein Kapitel, um die zugehörigen Snippets zu sehen. Von dort gelangst du auf die Detailseiten mit PDF‑Ansicht und Download‑Button für die .py‑Dateien.</p>
+</section>
+
+<section class="chapters">
+  
+  <details class="chapter" open>
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 1: Graph(ik)en, Permutationen und erzeugende Funktionen</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter1/1_preamble.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/simple-list-examples/simple-list-examples.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+simple-list-examples&labels=suggestion&body=Snippet%3A+simple-list-examples%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fsimple-list-examples%2Fsimple-list-examples.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+simple-list-examples&body=Snippet%3A+simple-list-examples%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fsimple-list-examples%2Fsimple-list-examples.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Beispiel: Einfache Schleife (englisch: loop) über eine Liste.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/mutable-immutable/mutable-immutable.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+mutable-immutable&labels=suggestion&body=Snippet%3A+mutable-immutable%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fmutable-immutable%2Fmutable-immutable.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+mutable-immutable&body=Snippet%3A+mutable-immutable%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fmutable-immutable%2Fmutable-immutable.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Mutable und immutable Datentypen in Python.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/val-ref/val-ref.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+val-ref&labels=suggestion&body=Snippet%3A+val-ref%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fval-ref%2Fval-ref.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+val-ref&body=Snippet%3A+val-ref%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fval-ref%2Fval-ref.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein kleines Code--Beispiel.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/string-examples/string-examples.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+string-examples&labels=suggestion&body=Snippet%3A+string-examples%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fstring-examples%2Fstring-examples.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+string-examples&body=Snippet%3A+string-examples%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fstring-examples%2Fstring-examples.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Beispiele: Ausgabe und Formatierung von Strings.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/for-loop/for-loop.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+for-loop&labels=suggestion&body=Snippet%3A+for-loop%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Ffor-loop%2Ffor-loop.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+for-loop&body=Snippet%3A+for-loop%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Ffor-loop%2Ffor-loop.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Eine \pythoncode{for}--Schleife mit \pythoncode{range}.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/factorial/factorial.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+factorial&labels=suggestion&body=Snippet%3A+factorial%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Ffactorial%2Ffactorial.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+factorial&body=Snippet%3A+factorial%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Ffactorial%2Ffactorial.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Faktorielle (oder Fakultät) als \EM{rekursive} Funktion.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/permutations-with-itertools/permutations-with-itertools.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+permutations-with-itertools&labels=suggestion&body=Snippet%3A+permutations-with-itertools%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fpermutations-with-itertools%2Fpermutations-with-itertools.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+permutations-with-itertools&body=Snippet%3A+permutations-with-itertools%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fpermutations-with-itertools%2Fpermutations-with-itertools.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/perm-mul/perm-mul.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+perm-mul&labels=suggestion&body=Snippet%3A+perm-mul%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fperm-mul%2Fperm-mul.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+perm-mul&body=Snippet%3A+perm-mul%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fperm-mul%2Fperm-mul.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/multiplication-table/multiplication-table.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+multiplication-table&labels=suggestion&body=Snippet%3A+multiplication-table%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fmultiplication-table%2Fmultiplication-table.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+multiplication-table&body=Snippet%3A+multiplication-table%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fmultiplication-table%2Fmultiplication-table.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Multiplikationstabelle einer Permutationsgruppe.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/deepcopy-trap/deepcopy-trap.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+deepcopy-trap&labels=suggestion&body=Snippet%3A+deepcopy-trap%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fdeepcopy-trap%2Fdeepcopy-trap.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+deepcopy-trap&body=Snippet%3A+deepcopy-trap%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fdeepcopy-trap%2Fdeepcopy-trap.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Falle: Neuer Verweis nicht gleich neue Kopie.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/cycle-decomposition/cycle-decomposition.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+cycle-decomposition&labels=suggestion&body=Snippet%3A+cycle-decomposition%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fcycle-decomposition%2Fcycle-decomposition.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+cycle-decomposition&body=Snippet%3A+cycle-decomposition%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fcycle-decomposition%2Fcycle-decomposition.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/falling-factorial/falling-factorial.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+falling-factorial&labels=suggestion&body=Snippet%3A+falling-factorial%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Ffalling-factorial%2Ffalling-factorial.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+falling-factorial&body=Snippet%3A+falling-factorial%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Ffalling-factorial%2Ffalling-factorial.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/binomial/binomial.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+binomial&labels=suggestion&body=Snippet%3A+binomial%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fbinomial%2Fbinomial.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+binomial&body=Snippet%3A+binomial%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fbinomial%2Fbinomial.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Binomialkoeffizient $\binom{n}{k}$.</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter1/simple-sympy-examples/simple-sympy-examples.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+simple-sympy-examples&labels=suggestion&body=Snippet%3A+simple-sympy-examples%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter1%2Fsimple-sympy-examples%2Fsimple-sympy-examples.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+simple-sympy-examples&body=Snippet%3A+simple-sympy-examples%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter1%2Fsimple-sympy-examples%2Fsimple-sympy-examples.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Symbolisches Rechnen mit \pythoncode{sympy}.</p>
+        
+      </li>
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 2: Algorithmen</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter2/2_algorithms.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/euclidean-algorithm/euclidean-algorithm.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+euclidean-algorithm&labels=suggestion&body=Snippet%3A+euclidean-algorithm%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Feuclidean-algorithm%2Feuclidean-algorithm.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+euclidean-algorithm&body=Snippet%3A+euclidean-algorithm%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Feuclidean-algorithm%2Feuclidean-algorithm.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/cycle-decomposition/cycle-decomposition.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+cycle-decomposition&labels=suggestion&body=Snippet%3A+cycle-decomposition%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fcycle-decomposition%2Fcycle-decomposition.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+cycle-decomposition&body=Snippet%3A+cycle-decomposition%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fcycle-decomposition%2Fcycle-decomposition.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/numpy-basics/numpy-basics.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+numpy-basics&labels=suggestion&body=Snippet%3A+numpy-basics%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fnumpy-basics%2Fnumpy-basics.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+numpy-basics&body=Snippet%3A+numpy-basics%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fnumpy-basics%2Fnumpy-basics.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/product-lex/product-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+product-lex&labels=suggestion&body=Snippet%3A+product-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-lex%2Fproduct-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+product-lex&body=Snippet%3A+product-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-lex%2Fproduct-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/walrus-operator/walrus-operator.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+walrus-operator&labels=suggestion&body=Snippet%3A+walrus-operator%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fwalrus-operator%2Fwalrus-operator.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+walrus-operator&body=Snippet%3A+walrus-operator%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fwalrus-operator%2Fwalrus-operator.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/product-with-itertools/product-with-itertools.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+product-with-itertools&labels=suggestion&body=Snippet%3A+product-with-itertools%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-with-itertools%2Fproduct-with-itertools.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+product-with-itertools&body=Snippet%3A+product-with-itertools%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-with-itertools%2Fproduct-with-itertools.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/generate-product-lex/generate-product-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+generate-product-lex&labels=suggestion&body=Snippet%3A+generate-product-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-product-lex%2Fgenerate-product-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+generate-product-lex&body=Snippet%3A+generate-product-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-product-lex%2Fgenerate-product-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-product-lex/rank-product-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-product-lex&labels=suggestion&body=Snippet%3A+rank-product-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-product-lex%2Frank-product-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-product-lex&body=Snippet%3A+rank-product-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-product-lex%2Frank-product-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-product-lex/unrank-product-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-product-lex&labels=suggestion&body=Snippet%3A+unrank-product-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-product-lex%2Funrank-product-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-product-lex&body=Snippet%3A+unrank-product-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-product-lex%2Funrank-product-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/test-product-lex/test-product-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+test-product-lex&labels=suggestion&body=Snippet%3A+test-product-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Ftest-product-lex%2Ftest-product-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+test-product-lex&body=Snippet%3A+test-product-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Ftest-product-lex%2Ftest-product-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/generic-rank-unrank-test/generic-rank-unrank-test.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+generic-rank-unrank-test&labels=suggestion&body=Snippet%3A+generic-rank-unrank-test%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fgeneric-rank-unrank-test%2Fgeneric-rank-unrank-test.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+generic-rank-unrank-test&body=Snippet%3A+generic-rank-unrank-test%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fgeneric-rank-unrank-test%2Fgeneric-rank-unrank-test.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/product-gray-code/product-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+product-gray-code&labels=suggestion&body=Snippet%3A+product-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-gray-code%2Fproduct-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+product-gray-code&body=Snippet%3A+product-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fproduct-gray-code%2Fproduct-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/test-product-gray-code/test-product-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+test-product-gray-code&labels=suggestion&body=Snippet%3A+test-product-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Ftest-product-gray-code%2Ftest-product-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+test-product-gray-code&body=Snippet%3A+test-product-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Ftest-product-gray-code%2Ftest-product-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-product-gray-code/rank-product-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-product-gray-code&labels=suggestion&body=Snippet%3A+rank-product-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-product-gray-code%2Frank-product-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-product-gray-code&body=Snippet%3A+rank-product-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-product-gray-code%2Frank-product-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-product-gray-code/unrank-product-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-product-gray-code&labels=suggestion&body=Snippet%3A+unrank-product-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-product-gray-code%2Funrank-product-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-product-gray-code&body=Snippet%3A+unrank-product-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-product-gray-code%2Funrank-product-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/classical-gray-code/classical-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+classical-gray-code&labels=suggestion&body=Snippet%3A+classical-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fclassical-gray-code%2Fclassical-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+classical-gray-code&body=Snippet%3A+classical-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fclassical-gray-code%2Fclassical-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/set-to-characteristic-function/set-to-characteristic-function.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+set-to-characteristic-function&labels=suggestion&body=Snippet%3A+set-to-characteristic-function%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fset-to-characteristic-function%2Fset-to-characteristic-function.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+set-to-characteristic-function&body=Snippet%3A+set-to-characteristic-function%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fset-to-characteristic-function%2Fset-to-characteristic-function.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/print-classical-gray-code/print-classical-gray-code.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+print-classical-gray-code&labels=suggestion&body=Snippet%3A+print-classical-gray-code%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fprint-classical-gray-code%2Fprint-classical-gray-code.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+print-classical-gray-code&body=Snippet%3A+print-classical-gray-code%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fprint-classical-gray-code%2Fprint-classical-gray-code.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/subsets-class-iterator/subsets-class-iterator.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+subsets-class-iterator&labels=suggestion&body=Snippet%3A+subsets-class-iterator%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fsubsets-class-iterator%2Fsubsets-class-iterator.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+subsets-class-iterator&body=Snippet%3A+subsets-class-iterator%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fsubsets-class-iterator%2Fsubsets-class-iterator.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/use-subsets-class-iterator/use-subsets-class-iterator.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+use-subsets-class-iterator&labels=suggestion&body=Snippet%3A+use-subsets-class-iterator%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fuse-subsets-class-iterator%2Fuse-subsets-class-iterator.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+use-subsets-class-iterator&body=Snippet%3A+use-subsets-class-iterator%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fuse-subsets-class-iterator%2Fuse-subsets-class-iterator.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-colex-subsets/rank-colex-subsets.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-colex-subsets&labels=suggestion&body=Snippet%3A+rank-colex-subsets%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-colex-subsets%2Frank-colex-subsets.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-colex-subsets&body=Snippet%3A+rank-colex-subsets%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-colex-subsets%2Frank-colex-subsets.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-colex-subsets/unrank-colex-subsets.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-colex-subsets&labels=suggestion&body=Snippet%3A+unrank-colex-subsets%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-colex-subsets%2Funrank-colex-subsets.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-colex-subsets&body=Snippet%3A+unrank-colex-subsets%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-colex-subsets%2Funrank-colex-subsets.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/perm-lex/perm-lex.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+perm-lex&labels=suggestion&body=Snippet%3A+perm-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fperm-lex%2Fperm-lex.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+perm-lex&body=Snippet%3A+perm-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fperm-lex%2Fperm-lex.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/monte-carlo-permutations/monte-carlo-permutations.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+monte-carlo-permutations&labels=suggestion&body=Snippet%3A+monte-carlo-permutations%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fmonte-carlo-permutations%2Fmonte-carlo-permutations.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+monte-carlo-permutations&body=Snippet%3A+monte-carlo-permutations%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fmonte-carlo-permutations%2Fmonte-carlo-permutations.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/generate-johnson-trotter/generate-johnson-trotter.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+generate-johnson-trotter&labels=suggestion&body=Snippet%3A+generate-johnson-trotter%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-johnson-trotter%2Fgenerate-johnson-trotter.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+generate-johnson-trotter&body=Snippet%3A+generate-johnson-trotter%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-johnson-trotter%2Fgenerate-johnson-trotter.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/invert-pi/invert-pi.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+invert-pi&labels=suggestion&body=Snippet%3A+invert-pi%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Finvert-pi%2Finvert-pi.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+invert-pi&body=Snippet%3A+invert-pi%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Finvert-pi%2Finvert-pi.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/count-less-than-last/count-less-than-last.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+count-less-than-last&labels=suggestion&body=Snippet%3A+count-less-than-last%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fcount-less-than-last%2Fcount-less-than-last.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+count-less-than-last&body=Snippet%3A+count-less-than-last%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fcount-less-than-last%2Fcount-less-than-last.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-johnson-trotter/rank-johnson-trotter.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-johnson-trotter&labels=suggestion&body=Snippet%3A+rank-johnson-trotter%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-johnson-trotter%2Frank-johnson-trotter.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-johnson-trotter&body=Snippet%3A+rank-johnson-trotter%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-johnson-trotter%2Frank-johnson-trotter.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-johnson-trotter/unrank-johnson-trotter.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-johnson-trotter&labels=suggestion&body=Snippet%3A+unrank-johnson-trotter%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-johnson-trotter%2Funrank-johnson-trotter.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-johnson-trotter&body=Snippet%3A+unrank-johnson-trotter%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-johnson-trotter%2Funrank-johnson-trotter.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/generate-integer-partitions/generate-integer-partitions.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+generate-integer-partitions&labels=suggestion&body=Snippet%3A+generate-integer-partitions%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-integer-partitions%2Fgenerate-integer-partitions.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+generate-integer-partitions&body=Snippet%3A+generate-integer-partitions%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fgenerate-integer-partitions%2Fgenerate-integer-partitions.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/p-nk-by-recursion/p-nk-by-recursion.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+p-nk-by-recursion&labels=suggestion&body=Snippet%3A+p-nk-by-recursion%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fp-nk-by-recursion%2Fp-nk-by-recursion.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+p-nk-by-recursion&body=Snippet%3A+p-nk-by-recursion%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fp-nk-by-recursion%2Fp-nk-by-recursion.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-integer-partitions/rank-integer-partitions.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-integer-partitions&labels=suggestion&body=Snippet%3A+rank-integer-partitions%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-integer-partitions%2Frank-integer-partitions.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-integer-partitions&body=Snippet%3A+rank-integer-partitions%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-integer-partitions%2Frank-integer-partitions.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-integer-partitions/unrank-integer-partitions.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-integer-partitions&labels=suggestion&body=Snippet%3A+unrank-integer-partitions%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-integer-partitions%2Funrank-integer-partitions.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-integer-partitions&body=Snippet%3A+unrank-integer-partitions%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-integer-partitions%2Funrank-integer-partitions.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/random-integer-partitions/random-integer-partitions.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+random-integer-partitions&labels=suggestion&body=Snippet%3A+random-integer-partitions%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frandom-integer-partitions%2Frandom-integer-partitions.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+random-integer-partitions&body=Snippet%3A+random-integer-partitions%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frandom-integer-partitions%2Frandom-integer-partitions.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/estimate-average-length-integer-partitions/estimate-average-length-integer-partitions.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+estimate-average-length-integer-partitions&labels=suggestion&body=Snippet%3A+estimate-average-length-integer-partitions%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Festimate-average-length-integer-partitions%2Festimate-average-length-integer-partitions.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+estimate-average-length-integer-partitions&body=Snippet%3A+estimate-average-length-integer-partitions%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Festimate-average-length-integer-partitions%2Festimate-average-length-integer-partitions.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/visualize-ferrers-diagram-heights/visualize-ferrers-diagram-heights.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+visualize-ferrers-diagram-heights&labels=suggestion&body=Snippet%3A+visualize-ferrers-diagram-heights%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fvisualize-ferrers-diagram-heights%2Fvisualize-ferrers-diagram-heights.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+visualize-ferrers-diagram-heights&body=Snippet%3A+visualize-ferrers-diagram-heights%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fvisualize-ferrers-diagram-heights%2Fvisualize-ferrers-diagram-heights.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/functions-of-restricted-growth/functions-of-restricted-growth.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+functions-of-restricted-growth&labels=suggestion&body=Snippet%3A+functions-of-restricted-growth%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Ffunctions-of-restricted-growth%2Ffunctions-of-restricted-growth.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+functions-of-restricted-growth&body=Snippet%3A+functions-of-restricted-growth%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Ffunctions-of-restricted-growth%2Ffunctions-of-restricted-growth.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/compute-r-Bell-numbers/compute-r-Bell-numbers.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+compute-r-Bell-numbers&labels=suggestion&body=Snippet%3A+compute-r-Bell-numbers%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Fcompute-r-Bell-numbers%2Fcompute-r-Bell-numbers.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+compute-r-Bell-numbers&body=Snippet%3A+compute-r-Bell-numbers%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Fcompute-r-Bell-numbers%2Fcompute-r-Bell-numbers.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/rank-function-of-restricted-growth/rank-function-of-restricted-growth.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+rank-function-of-restricted-growth&labels=suggestion&body=Snippet%3A+rank-function-of-restricted-growth%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Frank-function-of-restricted-growth%2Frank-function-of-restricted-growth.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+rank-function-of-restricted-growth&body=Snippet%3A+rank-function-of-restricted-growth%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Frank-function-of-restricted-growth%2Frank-function-of-restricted-growth.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/unrank-function-of-restricted-growth/unrank-function-of-restricted-growth.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+unrank-function-of-restricted-growth&labels=suggestion&body=Snippet%3A+unrank-function-of-restricted-growth%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2Funrank-function-of-restricted-growth%2Funrank-function-of-restricted-growth.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+unrank-function-of-restricted-growth&body=Snippet%3A+unrank-function-of-restricted-growth%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2Funrank-function-of-restricted-growth%2Funrank-function-of-restricted-growth.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/OEIS-query/OEIS-query.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+OEIS-query&labels=suggestion&body=Snippet%3A+OEIS-query%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2FOEIS-query%2FOEIS-query.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+OEIS-query&body=Snippet%3A+OEIS-query%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2FOEIS-query%2FOEIS-query.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter2/OEIS-parse/OEIS-parse.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+OEIS-parse&labels=suggestion&body=Snippet%3A+OEIS-parse%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter2%2FOEIS-parse%2FOEIS-parse.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+OEIS-parse&body=Snippet%3A+OEIS-parse%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter2%2FOEIS-parse%2FOEIS-parse.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 3: Rekursionen und formale Potenzreihen</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter3/3_recursionsfps.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 4: Graphen und Netzwerke</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter4/4_graphs.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/modify-edge/modify-edge.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+modify-edge&labels=suggestion&body=Snippet%3A+modify-edge%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fmodify-edge%2Fmodify-edge.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+modify-edge&body=Snippet%3A+modify-edge%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fmodify-edge%2Fmodify-edge.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/adjacency-matrix-from-edge-set/adjacency-matrix-from-edge-set.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+adjacency-matrix-from-edge-set&labels=suggestion&body=Snippet%3A+adjacency-matrix-from-edge-set%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fadjacency-matrix-from-edge-set%2Fadjacency-matrix-from-edge-set.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+adjacency-matrix-from-edge-set&body=Snippet%3A+adjacency-matrix-from-edge-set%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fadjacency-matrix-from-edge-set%2Fadjacency-matrix-from-edge-set.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/get-edges/get-edges.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+get-edges&labels=suggestion&body=Snippet%3A+get-edges%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fget-edges%2Fget-edges.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+get-edges&body=Snippet%3A+get-edges%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fget-edges%2Fget-edges.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/get-components/get-components.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+get-components&labels=suggestion&body=Snippet%3A+get-components%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fget-components%2Fget-components.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+get-components&body=Snippet%3A+get-components%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fget-components%2Fget-components.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/get-connecting-edges/get-connecting-edges.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+get-connecting-edges&labels=suggestion&body=Snippet%3A+get-connecting-edges%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fget-connecting-edges%2Fget-connecting-edges.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+get-connecting-edges&body=Snippet%3A+get-connecting-edges%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fget-connecting-edges%2Fget-connecting-edges.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/find-spanning-tree/find-spanning-tree.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+find-spanning-tree&labels=suggestion&body=Snippet%3A+find-spanning-tree%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Ffind-spanning-tree%2Ffind-spanning-tree.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+find-spanning-tree&body=Snippet%3A+find-spanning-tree%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Ffind-spanning-tree%2Ffind-spanning-tree.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/find-spanning-tree2/find-spanning-tree2.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+find-spanning-tree2&labels=suggestion&body=Snippet%3A+find-spanning-tree2%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Ffind-spanning-tree2%2Ffind-spanning-tree2.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+find-spanning-tree2&body=Snippet%3A+find-spanning-tree2%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Ffind-spanning-tree2%2Ffind-spanning-tree2.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter4/scipy-graph-components/scipy-graph-components.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+scipy-graph-components&labels=suggestion&body=Snippet%3A+scipy-graph-components%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter4%2Fscipy-graph-components%2Fscipy-graph-components.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+scipy-graph-components&body=Snippet%3A+scipy-graph-components%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter4%2Fscipy-graph-components%2Fscipy-graph-components.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 5: Gewichtserhaltende vorzeichenumkehrende Involutionen</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter5/5_bijections.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 6: Datenstrukturen und Algorithmen</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter6/6_structures.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/binary-search/binary-search.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+binary-search&labels=suggestion&body=Snippet%3A+binary-search%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fbinary-search%2Fbinary-search.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+binary-search&body=Snippet%3A+binary-search%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fbinary-search%2Fbinary-search.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/quicksort/quicksort.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+quicksort&labels=suggestion&body=Snippet%3A+quicksort%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fquicksort%2Fquicksort.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+quicksort&body=Snippet%3A+quicksort%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fquicksort%2Fquicksort.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/DLLNode/DLLNode.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+DLLNode&labels=suggestion&body=Snippet%3A+DLLNode%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FDLLNode%2FDLLNode.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+DLLNode&body=Snippet%3A+DLLNode%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FDLLNode%2FDLLNode.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/DoublyLinkedList/DoublyLinkedList.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+DoublyLinkedList&labels=suggestion&body=Snippet%3A+DoublyLinkedList%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FDoublyLinkedList%2FDoublyLinkedList.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+DoublyLinkedList&body=Snippet%3A+DoublyLinkedList%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FDoublyLinkedList%2FDoublyLinkedList.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/deque/deque.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+deque&labels=suggestion&body=Snippet%3A+deque%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fdeque%2Fdeque.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+deque&body=Snippet%3A+deque%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fdeque%2Fdeque.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/BinaryTreeNode/BinaryTreeNode.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+BinaryTreeNode&labels=suggestion&body=Snippet%3A+BinaryTreeNode%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FBinaryTreeNode%2FBinaryTreeNode.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+BinaryTreeNode&body=Snippet%3A+BinaryTreeNode%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FBinaryTreeNode%2FBinaryTreeNode.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/BinaryTree/BinaryTree.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+BinaryTree&labels=suggestion&body=Snippet%3A+BinaryTree%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FBinaryTree%2FBinaryTree.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+BinaryTree&body=Snippet%3A+BinaryTree%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FBinaryTree%2FBinaryTree.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/onedim-range-query/onedim-range-query.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+onedim-range-query&labels=suggestion&body=Snippet%3A+onedim-range-query%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fonedim-range-query%2Fonedim-range-query.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+onedim-range-query&body=Snippet%3A+onedim-range-query%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fonedim-range-query%2Fonedim-range-query.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/find-split-node/find-split-node.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+find-split-node&labels=suggestion&body=Snippet%3A+find-split-node%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Ffind-split-node%2Ffind-split-node.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+find-split-node&body=Snippet%3A+find-split-node%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Ffind-split-node%2Ffind-split-node.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/split-cloud-of-points/split-cloud-of-points.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+split-cloud-of-points&labels=suggestion&body=Snippet%3A+split-cloud-of-points%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fsplit-cloud-of-points%2Fsplit-cloud-of-points.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+split-cloud-of-points&body=Snippet%3A+split-cloud-of-points%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fsplit-cloud-of-points%2Fsplit-cloud-of-points.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/kd-subtree/kd-subtree.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+kd-subtree&labels=suggestion&body=Snippet%3A+kd-subtree%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fkd-subtree%2Fkd-subtree.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+kd-subtree&body=Snippet%3A+kd-subtree%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fkd-subtree%2Fkd-subtree.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/kd-tree/kd-tree.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+kd-tree&labels=suggestion&body=Snippet%3A+kd-tree%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2Fkd-tree%2Fkd-tree.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+kd-tree&body=Snippet%3A+kd-tree%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2Fkd-tree%2Fkd-tree.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/AVLTreeNode/AVLTreeNode.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+AVLTreeNode&labels=suggestion&body=Snippet%3A+AVLTreeNode%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FAVLTreeNode%2FAVLTreeNode.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+AVLTreeNode&body=Snippet%3A+AVLTreeNode%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FAVLTreeNode%2FAVLTreeNode.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter6/AVLTree/AVLTree.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+AVLTree&labels=suggestion&body=Snippet%3A+AVLTree%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter6%2FAVLTree%2FAVLTree.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+AVLTree&body=Snippet%3A+AVLTree%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter6%2FAVLTree%2FAVLTree.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+    </ul>
+  </details>
+  
+  <details class="chapter" >
+    <summary>
+      <div class="chapter-summary">
+        <h2 class="chapter-title">Kapitel 7: Algorithmische Geometrie</h2>
+        
+          <a class="btn btn-primary" href="../chapters/chapter7/7_geometry.ipynb" download>Notebook herunterladen</a>
+        
+      </div>
+    </summary>
+
+    <ul class="snippet-list">
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/geometry-preamble/geometry-preamble.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+geometry-preamble&labels=suggestion&body=Snippet%3A+geometry-preamble%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fgeometry-preamble%2Fgeometry-preamble.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+geometry-preamble&body=Snippet%3A+geometry-preamble%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fgeometry-preamble%2Fgeometry-preamble.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/geometry-preamble2/geometry-preamble2.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+geometry-preamble2&labels=suggestion&body=Snippet%3A+geometry-preamble2%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fgeometry-preamble2%2Fgeometry-preamble2.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+geometry-preamble2&body=Snippet%3A+geometry-preamble2%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fgeometry-preamble2%2Fgeometry-preamble2.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/convex-hull-slow/convex-hull-slow.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+convex-hull-slow&labels=suggestion&body=Snippet%3A+convex-hull-slow%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull-slow%2Fconvex-hull-slow.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+convex-hull-slow&body=Snippet%3A+convex-hull-slow%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull-slow%2Fconvex-hull-slow.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/numeric-errors/numeric-errors.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+numeric-errors&labels=suggestion&body=Snippet%3A+numeric-errors%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fnumeric-errors%2Fnumeric-errors.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+numeric-errors&body=Snippet%3A+numeric-errors%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fnumeric-errors%2Fnumeric-errors.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/convex-hull/convex-hull.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+convex-hull&labels=suggestion&body=Snippet%3A+convex-hull%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull%2Fconvex-hull.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+convex-hull&body=Snippet%3A+convex-hull%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull%2Fconvex-hull.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/parabolic-intersections/parabolic-intersections.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+parabolic-intersections&labels=suggestion&body=Snippet%3A+parabolic-intersections%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fparabolic-intersections%2Fparabolic-intersections.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+parabolic-intersections&body=Snippet%3A+parabolic-intersections%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fparabolic-intersections%2Fparabolic-intersections.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/gives-circle-event/gives-circle-event.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+gives-circle-event&labels=suggestion&body=Snippet%3A+gives-circle-event%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fgives-circle-event%2Fgives-circle-event.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+gives-circle-event&body=Snippet%3A+gives-circle-event%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fgives-circle-event%2Fgives-circle-event.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/make-voronoi-diagram/make-voronoi-diagram.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+make-voronoi-diagram&labels=suggestion&body=Snippet%3A+make-voronoi-diagram%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fmake-voronoi-diagram%2Fmake-voronoi-diagram.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+make-voronoi-diagram&body=Snippet%3A+make-voronoi-diagram%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fmake-voronoi-diagram%2Fmake-voronoi-diagram.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+      <li class="snippet-item">
+        <div class="snippet-header">
+          <!-- Link zur Detailseite -->
+          <a class="snippet-link" href="chapters/chapter7/convex-hull-voronoi/convex-hull-voronoi.html">Ein Snippet</a>
+          <!-- Feedback-Optionen: GitHub Issues und mailto -->
+          <div class="snippet-actions-inline">
+            <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+convex-hull-voronoi&labels=suggestion&body=Snippet%3A+convex-hull-voronoi%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull-voronoi%2Fconvex-hull-voronoi.html%0A">Über GitHub melden</a>
+            <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+convex-hull-voronoi&body=Snippet%3A+convex-hull-voronoi%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+chapters%2Fchapter7%2Fconvex-hull-voronoi%2Fconvex-hull-voronoi.html%0A">E-Mail senden</a>
+          </div>
+        </div>
+        
+        <!-- Kurzbeschreibung / Teaser -->
+        <p class="snippet-description">Ein Programmierbeispiel</p>
+        
+      </li>
+      
+    </ul>
+  </details>
+  
+</section>
+
+  </main>
+
+  <!-- Footer mit Lizenz-/Haftungshinweis; DSGVO-Hinweis auf Hosting durch GitHub Pages -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Python Snippets zur Diskreten Mathematik. Inhalte unter freier Lizenz (ohne Gewähr).
+        <a href="./legal/impressum.html">Impressum & Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

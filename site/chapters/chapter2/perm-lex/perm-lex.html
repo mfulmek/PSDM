@@ -1,0 +1,73 @@
+<!-- templates/snippet.html.j2 -->
+<!-- templates/base.html.j2 -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Titel und Beschreibung kommen aus den render-Aufrufen -->
+  <title>Ein Snippet – Python Snippet</title>
+  <meta name="description" content="Ein Programmierbeispiel" />
+  <!-- Zentrales CSS, relroot wird pro Seite berechnet, damit Links auch aus Unterordnern funktionieren -->
+  <link rel="stylesheet" href="../../../styles/styles.css" />
+  <!-- WICHTIG: keine externen Tracker/Fonts eingebunden, um DSGVO minimal zu halten -->
+</head>
+<body>
+  <!-- Kopfbereich: Branding + einfache Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../../../index.html">
+        <!-- Optional: Logo -->
+        
+        <span class="brand-text">Python Snippets zur Diskreten Mathematik</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../../../index.html" class="nav-link ">Übersicht</a>
+        <a href="../../../legal/impressum.html" class="nav-link ">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hauptinhalt: wird in kindlichen Templates befüllt -->
+  <main class="container">
+    
+<section class="snippet-header-block">
+  <h1 class="snippet-title">Ein Snippet</h1>
+  
+  <p class="snippet-subtitle">Ein Programmierbeispiel</p>
+  
+
+  <div class="snippet-actions">
+    
+    <a class="btn btn-primary" href="../../../../chapters/chapter2/perm-lex/perm-lex.py" download>Python-Datei herunterladen (.py)</a>
+    
+    <!-- Feedback-Buttons -->
+    <a class="btn btn-secondary" href="https://github.com/mfulmek/PSDM/issues/new?title=Vorschlag+zu+perm-lex&labels=suggestion&body=Snippet%3A+perm-lex%0A%0ABitte+beschreibe+deinen+Vorschlag+hier%3A%0A%0A%28Optional%29+Bezug+zur+Webseite%3A%0ASeite%3A+perm-lex.html%0A">Über GitHub melden</a>
+    <a class="btn btn-secondary" href="mailto:Markus.Fulmek@univie.ac.at?subject=Vorschlag+zu+perm-lex&body=Snippet%3A+perm-lex%0A%0ADein+Vorschlag%3A%0A%0ASeite%3A+perm-lex.html%0A">E-Mail senden</a>
+  </div>
+</section>
+
+<section class="snippet-pdf-block">
+  <h2>PDF-Version</h2>
+  
+  <!-- PDF-Einbettung mit Fallback-Link -->
+  <object data="../../../../chapters/chapter2/perm-lex/perm-lex.pdf" type="application/pdf" class="pdf-viewer" aria-label="PDF-Ansicht von perm-lex">
+    <p>Die PDF-Ansicht kann in deinem Browser nicht angezeigt werden.
+      <a href="../../../../chapters/chapter2/perm-lex/perm-lex.pdf" target="_blank" rel="noopener">PDF öffnen</a>.
+    </p>
+  </object>
+  
+</section>
+
+  </main>
+
+  <!-- Footer mit Lizenz-/Haftungshinweis; DSGVO-Hinweis auf Hosting durch GitHub Pages -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Python Snippets zur Diskreten Mathematik. Inhalte unter freier Lizenz (ohne Gewähr).
+        <a href="../../../legal/impressum.html">Impressum & Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
