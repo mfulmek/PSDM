@@ -6,8 +6,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Titel und Beschreibung kommen aus den render-Aufrufen -->
-  <title>Ein Snippet – Python Snippet</title>
-  <meta name="description" content="Ein Programmierbeispiel" />
+  <title>7.8: Funktion zur Konstruktion des Voronoi--Diagramms für eine Punktwolke – Python Snippet</title>
+  <meta name="description" content="Funktion zur Konstruktion des Voronoi--Diagramms
+für eine Punktwolke: Die Punkte werden zuerst lexikographisch
+(von oben nach unten, dann von rechts nach links) sortiert.
+Durch Abarbeiten dieser Punkte in einer for-Schleife
+wird also automatisch das Herabsinken der Leitlinie für die
+site-events richtig umgesetzt; aber natürlich müssen zwischendurch
+allfällige circle-events behandelt werden. Das Voronoi-Diagramm
+selbst wird als dict konstruiert, dessen keys
+die Paare von (Indices von) Punkten sind, deren Streckensymmetrale eine
+Kante $e$ des Voronoi-Diagramms enthält, und dessen values
+Punkte (also Knoten) des Voronoi-Diagramms sind, die diese Kante $e$ begrenzen
+(zumindest auf einer Seite). In den Kommentarzeilen
+ist die Vorgangsweise genau beschrieben, darum ist der Code auch so lang." />
   <!-- Zentrales CSS, relroot wird pro Seite berechnet, damit Links auch aus Unterordnern funktionieren -->
   <link rel="stylesheet" href="../../../styles/styles.css" />
   <!-- WICHTIG: keine externen Tracker/Fonts eingebunden, um DSGVO minimal zu halten -->
@@ -32,9 +44,21 @@
   <main class="container">
     
 <section class="snippet-header-block">
-  <h1 class="snippet-title">Ein Snippet</h1>
+  <h1 class="snippet-title">7.8: Funktion zur Konstruktion des Voronoi--Diagramms für eine Punktwolke</h1>
   
-  <p class="snippet-subtitle">Ein Programmierbeispiel</p>
+  <p class="snippet-subtitle">Funktion zur Konstruktion des Voronoi--Diagramms
+für eine Punktwolke: Die Punkte werden zuerst lexikographisch
+(von oben nach unten, dann von rechts nach links) sortiert.
+Durch Abarbeiten dieser Punkte in einer for-Schleife
+wird also automatisch das Herabsinken der Leitlinie für die
+site-events richtig umgesetzt; aber natürlich müssen zwischendurch
+allfällige circle-events behandelt werden. Das Voronoi-Diagramm
+selbst wird als dict konstruiert, dessen keys
+die Paare von (Indices von) Punkten sind, deren Streckensymmetrale eine
+Kante $e$ des Voronoi-Diagramms enthält, und dessen values
+Punkte (also Knoten) des Voronoi-Diagramms sind, die diese Kante $e$ begrenzen
+(zumindest auf einer Seite). In den Kommentarzeilen
+ist die Vorgangsweise genau beschrieben, darum ist der Code auch so lang.</p>
   
 
   <div class="snippet-actions">
